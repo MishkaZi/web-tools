@@ -1,0 +1,38 @@
+/* Base Layout */
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Tool Card */
+.tool-card {
+    height: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.tool-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .tool-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Custom scrollbar for debug panel */
+.debug-panel::-webkit-scrollbar {
+    width: 8px;
+}
+
+.debug-panel::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.debug-panel::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}

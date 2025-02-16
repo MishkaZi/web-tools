@@ -1,0 +1,19 @@
+{
+    "name": "mikez/web-tools",
+    "description": "Web Development Tools",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Core\\": "src/Core/"
+        },
+        "files": ["src/Core/functions.php"]
+    },
+    "authors": [
+        {
+            "name": "Mike Zino"
+        }
+    ],
+    "require": {
+        "php": ">=8.2"
+    }
+}

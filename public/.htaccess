@@ -1,0 +1,21 @@
+# Enable rewriting
+RewriteEngine On
+
+# Set the base directory
+RewriteBase /web-tools/
+
+# Explicitly handle API routes first
+RewriteRule ^api/tool-delete$ index.php [QSA,L]
+RewriteRule ^api/tool-upload$ index.php [QSA,L]
+
+# Allow direct access to existing files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route everything through index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# PHP settings
+php_value display_errors 1
+php_value post_max_size 64M
+php_value upload_max_filesize 64M
