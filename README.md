@@ -137,5 +137,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## 📞 Contact
 
-Your Name - [@yourusername](https://twitter.com/yourusername)
-Project Link: [https://github.com/yourusername/web-tools](https://github.com/yourusername/web-tools)
+Your Name - [@michaelzinoviev-webdev](https://www.linkedin.com/in/michaelzinoviev-webdev/)
+Project Link: [https://github.com/MishkaZi/web-tools](https://github.com/MishkaZi/web-tools)
